@@ -12,7 +12,7 @@ flutter riverpod 라이브러리를 사용할 때 캐싱 타임을 적용할 수
 <br />
 
 # 사용예시
-```
+```dart
 import 'package:dio/dio.dart';
 import 'package:riverpod_annotation/riverpod_annotation.dart';
 import 'package:riverpod_cache_time/riverpod_cache_time.dart';

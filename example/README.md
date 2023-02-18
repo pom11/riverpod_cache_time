@@ -1,6 +1,6 @@
 # 사용예시 
 -  get_api_data.provider.dart
-```
+```dart
 import 'package:dio/dio.dart';
 import 'package:riverpod_annotation/riverpod_annotation.dart';
 import 'package:riverpod_cache_time/riverpod_cache_time.dart';
