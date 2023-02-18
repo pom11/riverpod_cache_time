@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:riverpod_cache_time_example/screen/main_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -21,14 +23,9 @@ class _MyAppState extends State<MyApp> {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      home: Scaffold(
-        appBar: AppBar(
-          title: const Text('Plugin example app'),
-        ),
-        body: const Center(
-          child: Text('Running on: \n'),
-        ),
+    return const ProviderScope(
+      child: MaterialApp(
+        home: MainScreen(),
       ),
     );
   }

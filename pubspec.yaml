@@ -1,6 +1,6 @@
 name: riverpod_cache_time
 description: Provides a function that allows you to use cache time when using the RiverPod state management library.
-version: 0.0.1
+version: 0.0.2
 homepage: https://github.com/wisdomstar94/riverpod_cache_time
 
 environment:
@@ -12,6 +12,7 @@ dependencies:
   flutter:
     sdk: flutter
   flutter_riverpod: ^2.2.0
+  logger: ^1.1.0
   plugin_platform_interface: ^2.0.2
 
 dev_dependencies:
