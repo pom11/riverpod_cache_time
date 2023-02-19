@@ -1,11 +1,9 @@
 import 'package:dio/dio.dart';
-import 'package:riverpod_annotation/riverpod_annotation.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:riverpod_cache_time/riverpod_cache_time.dart';
 import 'package:riverpod_cache_time_example/api/fetch_api_data.dart';
-part 'get_api_data.provider.g.dart';
 
-@riverpod
-Future<String> getApiData(GetApiDataRef ref) async {
+final getApiDataProvider = FutureProvider.autoDispose((ref) async {
   CancelToken cancelToken = CancelToken();
   final String data = await fetchApiData(cancelToken: cancelToken);
   final link = ref.keepAlive();
@@ -16,4 +14,4 @@ Future<String> getApiData(GetApiDataRef ref) async {
     cancelToken: cancelToken,
   );
   return data;
-}
+});

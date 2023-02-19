@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:riverpod_cache_time/util/logger/logger.dart';
-import 'package:riverpod_cache_time_example/provider/get_api_data.provider.dart';
+import 'package:riverpod_cache_time_example/provider_class/get_api_data.provider.dart';
+// import 'package:riverpod_cache_time_example/provider/get_api_data.provider.dart';
 
 import 'test_screen.dart';
 
