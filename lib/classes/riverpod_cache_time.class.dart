@@ -57,7 +57,11 @@ class RiverpodCacheTime<T extends AutoDisposeFutureProviderRef> {
     if (cacheMaxSecond < difference.inSeconds) {
       firstTime = firstTime.copyWith(year: 2022);
       link.close();
-      cancelToken?.cancel();
+      if (cancelToken != null) {
+        if (cancelToken?.isCancelled == false) {
+          cancelToken?.cancel();
+        }
+      }
       if (closeAndCanceled != null) {
         closeAndCanceled();
       }
