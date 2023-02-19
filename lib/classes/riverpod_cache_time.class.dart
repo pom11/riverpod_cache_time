@@ -14,7 +14,7 @@ class RiverpodCacheTime<T extends AutoDisposeFutureProviderRef> {
     required this.cacheMaxSecond,
     required this.ref,
     required this.link,
-    this.cancelToken,
+    @Deprecated('It will be removed in the next major version update.') this.cancelToken,
   }) {
     _init();
   }

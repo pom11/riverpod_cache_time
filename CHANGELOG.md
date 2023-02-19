@@ -11,3 +11,6 @@
 
 ## 0.0.4
 * 인자로 받은 cancelToken 의 close() 메소드를 호출할 때 이미 취소가 되었는지 확인하는 로직 추가.
+
+## 0.0.5
+* RiverpodCacheTime 클래스 생성자 매개변수 중에 cancelToken 매개변수 deprecated 처리.
